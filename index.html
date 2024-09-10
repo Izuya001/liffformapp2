@@ -28,7 +28,7 @@
         </div>
         <p class="mt-3">添付資料</p>
         <div>
-            <input class="form-control w-100 mt-1" name="airyo" required>
+            <input class="form-control w-100 mt-1" name="shiryo" required>
         </div>
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
     </form>
@@ -72,11 +72,11 @@
         $(function () {
             $('form').submit(function () {
                 const name    = $('input[name="name"]').val();
-                const udetate = $('input[name="udetate"]').val();
-                const fukkin  = $('input[name="fukkin"]').val();
-                const haikin  = $('input[name="haikin"]').val();
-                const sukuwat = $('input[name="sukuwat"]').val();
-                const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}`;
+                const udetate = $('input[name="nichiji"]').val();
+                const fukkin  = $('input[name="basyo"]').val();
+                const haikin  = $('input[name="naiyo"]').val();
+                const sukuwat = $('input[name="shiryo"]').val();
+                const msg = `${name}\n${nichiji}\n${basyo}\n${naiyo}\n${shiryot}`;
                 sendText(msg);
                 return false;
             });
